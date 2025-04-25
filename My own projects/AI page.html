@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Artificial Intelligence</title>
+        <style>
+            body {
+                background-image: url('images/AI img.jpg'); /* Replace with your image path */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                color: white;
+                overflow: hidden;
+            }
+
+            .header {
+                position: absolute;
+                top: 10px;
+                left: 10px;
+            }
+
+            .header button {
+                text-align: center;
+                background-color: rgba(32, 32, 33, 0.8);
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                cursor: pointer;
+                transition: background-color 0.3s ease, box-shadow 0.3s ease;
+            }
+
+            .header button:hover {
+                background-color: rgba(165, 165, 172, 0.8);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+            }
+
+            .search-bar {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                width: 300px;
+                height: 40px;
+                border: none;
+                border-radius: 20px;
+                padding: 10px 20px;
+                font-size: 16px;
+                background: rgba(255, 255, 255, 0.2);
+                color: white;
+                outline: none;
+                box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+                animation: glow 2s infinite alternate;
+            }
+
+            .search-bar::placeholder {
+                color: rgba(255, 255, 255, 0.7);
+            }
+
+            @keyframes glow {
+                0% {
+                    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+                }
+                100% {
+                    box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+                }
+            }
+
+            .card-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                padding: 100px 20px;
+                height: 100vh;
+                overflow-y: scroll;
+            }
+
+            .card {
+                width: 200px;
+                height: 300px;
+                background: rgba(255, 255, 255, 0.1);
+                backdrop-filter: blur(10px);
+                -webkit-backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 16px;
+                text-align: center;
+                cursor: pointer;
+                animation: float 5s infinite ease-in-out;
+            }
+
+            .card:hover {
+                transform: scale(1.1);
+                box-shadow: 0 15px 30px rgba(255, 255, 255, 0.5);
+            }
+
+            @keyframes float {
+                0%, 100% {
+                    transform: translateY(0);
+                }
+                50% {
+                    transform: translateY(-10px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <button onclick="location.href='index.html'">Back to Home</button>
+        </div>
+        <input class="search-bar" type="text" placeholder="Search AI Topics..." />
+        <div class="card-container">
+            <div class="card" onclick="location.href='machine-learning.html'">Machine Learning</div>
+            <div class="card" onclick="location.href='natural-language-processing.html'">Natural Language Processing</div>
+            <div class="card" onclick="location.href='computer-vision.html'">Computer Vision</div>
+            <div class="card" onclick="location.href='ai-ethics.html'">AI Ethics</div>
+        </div>
+    </body>
+</html>

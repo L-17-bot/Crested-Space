@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Own Project</title>
+        <style>
+            body {
+                background-image: url('images/Web canva.jpg'); /* Replace with your image path */
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                overflow: hidden; /* Prevents scrollbars during animation */
+            }
+
+            .header {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                display: flex;
+                gap: 10px;
+            }
+
+            .header button {
+                text-align: center;
+                background-color: rgb(32, 32, 33);
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                color: white;
+                font-size: 16px;
+                font-weight: bold;
+                transition: box-shadow 0.3s ease, background-color 0.3s ease, font-size 0.3s ease, border-radius 0.3s ease;
+                cursor: pointer;
+            }
+
+            .header button:hover {
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+                border-radius: 100px;
+                background-color: rgb(165, 165, 172);
+            }
+
+            .header button:active {
+                transform: scale(0.95); /* Slightly shrink the button when clicked */
+                background-color: rgb(100, 100, 100); /* Darker background on active */
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); /* Add a stronger shadow */
+            }
+
+            .title {
+                font-weight: bold;
+                font-size: 30px;
+                text-align: center;
+                font-family: Arial;
+                color: white;
+                margin-bottom: 20px;
+            }
+
+            .button-container {
+                display: flex;
+                justify-content: space-evenly;
+                width: 100%;
+                max-width: 800px;
+                margin-bottom: 20px;
+            }
+
+            .card {
+                position: relative;
+                width: 180px;
+                height: 250px;
+                background-size: cover;
+                background-position: center;
+                border-radius: 10px;
+                overflow: hidden;
+                display: flex;
+                align-items: flex-end;
+                justify-content: center;
+                color: white;
+                font-size: 20px;
+                font-weight: bold;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+                transition: transform 0.3s ease, box-shadow 0.3s ease;
+                cursor: pointer;
+            }
+
+            .card:hover {
+                transform: translateY(-10px); /* Makes the card "levitate" */
+                box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+            }
+
+            .science {
+                background-image: url('images/science img.jpeg'); /* Replace with your science image path */
+            }
+
+            .astronomy {
+                background-image: url('images/astronomy img.jpg'); /* Replace with your astronomy image path */
+            }
+
+            .ai {
+                background-image: url('images/ai img.jpg'); /* Replace with your AI image path */
+            }
+
+            .technology {
+                background-image: url('images/technology img.webp'); /* Replace with your technology image path */
+            }
+
+            footer {
+                position: absolute;
+                bottom: 10px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <button>About Us</button>
+            <button onclick="location.href='signin.html'">Sign In</button>
+        </div>
+        <p class="title">
+            Welcome Crested Space
+        </p>
+        <div class="button-container">
+            <div class="card science" onclick="location.href='science page.html'">
+                <span>Science</span>
+            </div>
+            <div class="card astronomy" onclick="location.href='Astronomy page.html'">
+                <span>Astronomy</span>
+            </div>
+            <div class="card ai" onclick="location.href='AI page.html'">
+                <span>AI</span>
+            </div>
+            <div class="card technology" onclick="location.href='Technology page.html'">
+                <span>Technology</span>
+            </div>
+        </div>
+        <footer>
+            All rights reserved Turyatemba Nolan 2025
+        </footer>
+    </body>
+</html>
